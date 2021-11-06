@@ -45,7 +45,7 @@ int main()
       ob.area(ob.s);
       break;
     case 3:
-      cout<<"Enter the lenght of the rectangle : ";
+      cout<<"Enter the length of the rectangle : ";
       cin>>ob.l;
       cout<<"Enter the breadth of the rectangle : ";
       cin>>ob.b;
