@@ -6,8 +6,7 @@ int main()
     int i,v_count=0,c_count=0;
     string ch;
     printf("Enter the string : ");
-	getline(cin,ch);
-	cout<<ch.length();
+    getline(cin,ch);
     for(i=0;i<ch.length();i++)
     {
        if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'||ch[i]=='A'||ch[i]=='E'||ch[i]=='I'||ch[i]=='O'||ch[i]=='U')
