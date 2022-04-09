@@ -8,20 +8,27 @@ int main()
   int num,temp,sum=0,s;
   cout<<"Enter the number : ";
   cin>>num;
-  temp=num;
-  while(temp!=0)
+  if(num>=100 && num<=999)
   {
-    s=temp%10;
-    sum=sum+(s*s*s);
-    temp=temp/10;
-  }
-  if(sum==num)
-  {
-    cout<<num<<" is an armstrong number."<<endl;
+    temp=num;
+    while(temp!=0)
+    {
+      s=temp%10;
+      sum=sum+(s*s*s);
+      temp=temp/10;
+    }
+    if(sum==num)
+    {
+      cout<<num<<" is an armstrong number."<<endl;
+    }
+    else
+    {
+      cout<<num<<" is not an armstrong number."<<endl;
+    }
   }
   else
   {
-    cout<<num<<" is not an armstrong number."<<endl;
+    cout<<"It is not a three digit number."<<endl;
   }
   return 0;
 }
